@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/cc914dfc6e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container" id="container">
+      <div class="form-container sign-up-container">
+        <form action="" onsubmit="return false;">
+          <input type="text" placeholder="نام کاربری ..." class="userName" />
+          <input type="email" placeholder="ایمیل ..." class="email" /><input
+            type="password"
+            placeholder="کلمه عبور ..."
+            class="pass"
+          />
+          <input type="date" class="birthday" />
+          <input type="text" class="codeMeli" placeholder="کد ملی ..." />
+          <button class="btn-reg submitBtn">عضویت</button>
+        </form>
+      </div>
+      <div class="form-container sign-in-container">
+        <form action="" onsubmit="return false;">
+          <input
+            type="email"
+            class="loginEmail"
+            placeholder="ایمیل ..."
+          /><input
+            type="password"
+            class="loginPass"
+            placeholder="کلمه عبور ..."
+          />
+          <a href="#">فراموشی کلمه عبور</a>
+          <button class="btn-login loginBtn">ورود</button>
+        </form>
+      </div>
+      <div class="div overlay-container">
+        <div class="overlay">
+          <div class="overlay-panel overlay-left">
+            <h1>خوش امدید</h1>
+            <p>برای دسترسی به تمام امکانات سایت ابتدا در سایت لاگین نمایید</p>
+            <button class="ghost" id="signIn">ورود</button>
+          </div>
+          <div class="overlay-panel overlay-right">
+            <h1>خوش امدید</h1>
+            <p>اگر عضو سایت نیستید در کمتر از 1 دقیقه عضو سایت شوید</p>
+            <button class="ghost" id="signUp">عضویت</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="alert-box" class="hidden">
+      <div class="alert-content">
+        <span class="alert-message"></span>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.4.min.js"
+      integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
